@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'PPFragment';
+  src: url('https://ext.same-assets.com/3320819198/289710438.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('https://ext.same-assets.com/3320819198/319345769.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --blacklane-dark: #312e2c;
+  --blacklane-cream: #fbf8f8;
+  --blacklane-blue: #a7c4e7;
+  --blacklane-beige: #f5f0eb;
+}
+
+body {
+  font-family: 'Geist', 'Inter', sans-serif;
+  color: var(--blacklane-dark);
+  background: white;
+}
+
+h1, h2, h3 {
+  font-family: 'PPFragment', Georgia, serif;
+}
+
+.hero-gradient {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, transparent 50%);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 45s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
