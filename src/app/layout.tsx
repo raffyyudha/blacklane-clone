@@ -3,10 +3,10 @@ import "./globals.css";
 import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
 
 export const metadata: Metadata = {
-  title: "The Global Chauffeur Service | Blacklane",
+  title: "The Global Chauffeur Service | AMAQ",
   description: "Professional chauffeurs for business and leisure across 60+ countries. We'll take care of the details so you can arrive at your best.",
   icons: {
-    icon: "https://ext.same-assets.com/3320819198/211296241.ico",
+    icon: "/favicon.svg",
   },
 };
 
